@@ -18,6 +18,16 @@ img = torch.randn(1, 3, 256, 256)
 out = net(img)
 ```
 
+## Citation
+
+```bibtex
+@article{mehta2021mobilevit,
+  title={MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer},
+  author={Mehta, Sachin and Rastegari, Mohammad},
+  journal={arXiv preprint arXiv:2110.02178},
+  year={2021}
+}
+```
 
 ## Credits
 
