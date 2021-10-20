@@ -2,10 +2,11 @@
 
 ## Overview
 
-This is a PyTorch implementation of MobileViT specified in "[MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer](https://arxiv.org/abs/2110.02178)", arXiv 2021.
+This is a PyTorch implementation of MobileViT specified in ["MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer"](https://arxiv.org/abs/2110.02178), arXiv 2021.
 
 ![img](https://user-images.githubusercontent.com/67839539/136470152-2573529e-1a24-4494-821d-70eb4647a51d.png)
 
+👉 Check out [CoAtNet](https://github.com/chinhsuanwu/coatnet-pytorch) if you are interested in other **Convolution + Transformer** models.
 
 ## Usage
 
@@ -13,9 +14,9 @@ This is a PyTorch implementation of MobileViT specified in "[MobileViT: Light-we
 import torch
 from mobilevit import mobilevit_xxs
 
-net = mobilevit_xxs()
 img = torch.randn(1, 3, 256, 256)
-out = net(img)
+vit = mobilevit_xxs()
+out = vit(img)
 ```
 
 ## Citation
