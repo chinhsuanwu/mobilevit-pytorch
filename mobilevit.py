@@ -139,7 +139,7 @@ class MobileViTBlock(nn.Module):
         self.conv1 = conv_nxn_bn(channel, channel, kernel_size)
         self.conv2 = conv_1x1_bn(channel, dim)
 
-        self.transformer = Transformer(dim, depth, 1, 32, mlp_dim, dropout)
+        self.transformer = Transformer(dim, depth, 4, 8, mlp_dim, dropout)
 
         self.conv3 = conv_1x1_bn(dim, channel)
         self.conv4 = conv_nxn_bn(2 * channel, channel, kernel_size)
